@@ -7,27 +7,27 @@
 
 
 import Section_1
-import Section_2
-import Section_3
-import Section_4
-import Section_5
-import Main_Character
+import GlobalVariables
 
-# intro to game
-print("""
-Hope you enjoy!\n
-Hello, step forward young one!
-Let me tell you the story of an incredible adventurer.""")
-input("press 'enter' to continue\n")
 
-print("""
-The story begins with an adventure named Indiana Jones.
-He has been searching for the pieces of an ancient tablet for some time now,
-and he has finally discovered the location of the last piece.""")
-input("press 'enter' to continue\n")
+def main():
+    GlobalVariables.g_vars()  # initialise global variables
+    # intro to game
+    print('Hope you enjoy\n')
+    print('Hello, step forward young one!')
+    print('Let me tell you the story of an incredible adventurer.')
+    input("press 'enter' to continue\n")
 
-Section_1.start()
+    print('The story begins with and adventurer named Indiana Jones.')
+    print('He has been searching for the pieces of an ancient tablet for some time now,')
+    print('and he has finally discovered the location of the last piece.')
+    input("press 'enter' to continue\n")
 
+    Section_1.start()
+
+
+if __name__ == "__main__":
+    main()
 # I want to add a way for the player to check what they have in their inventory in all sections
 # I want to add a way for the player to check how many bullets they have in their inventory in all sections
 # add a way for the user to fight with monsters
